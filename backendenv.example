@@ -1,0 +1,1 @@
+DBSTRING=postgresql+psycopg2://aiuser:password@localhost:5432/aiprac
