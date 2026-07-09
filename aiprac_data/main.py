@@ -9,7 +9,8 @@ from Utils.Response import HttpException
 
 
 #table classes
-
+from Entities.Chats import Chat
+from Entities.Messages import Message
 
 #controller routers
 
@@ -22,6 +23,7 @@ async def lifespan(app: FastAPI):
 app = FastAPI(lifespan=lifespan, redirect_slashes=False)
 
 #app.include_router(controller.router)
+
 
 app.add_middleware(
     CORSMiddleware,
